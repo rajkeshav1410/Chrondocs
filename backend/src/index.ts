@@ -23,8 +23,7 @@ app.get("/", (req, res) => {
 // start the server
 app.listen(
   parseInt(process.env.PORT || "8081", 10),
-  process.env.BASE_URL || "localhost",
   () => {
-    console.info(`Server running: http://${url}`);
+    console.info(`Server started`);
   }
 );
